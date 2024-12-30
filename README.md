@@ -27,7 +27,9 @@ Prioritizes readability, usability, and aesthetics for a polished look.
 Tech Stack
 
 Frontend: HTML, CSS, JavaScript
+
 Animations: CSS animations, JavaScript libraries (e.g., GSAP, AOS)
+
 Deployment: GitHub Pages for seamless hosting.
 
 How to View the Website
@@ -40,7 +42,7 @@ Installation and Setup
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/<your-github-username>/<your-repo-name>.git
+git clone https://github.com/protofolio.git
 
 Navigate to the project directory:
 bash
