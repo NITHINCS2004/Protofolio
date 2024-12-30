@@ -7,6 +7,7 @@ Welcome to my Portfolio Website! This website showcases my projects, skills, and
 📱 Responsive Design
 
 Fully optimized for all devices: desktop, tablet, and mobile.
+
 Seamless layout adjustments ensure a consistent experience on any screen size.
 
 🖼 Projects Showcase
