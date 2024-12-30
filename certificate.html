@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #11998e, #38ef7d);
+      color: #fff;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    .certificate-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: nowrap; /* Ensures items stay in the same row */
+      padding: 20px;
+    }
+    .certificate {
+      border: 2px solid #fff;
+      border-radius: 8px;
+      padding: 15px;
+      width: 300px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .certificate:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+    .certificate img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .certificate p {
+      margin: 5px 0;
+    }
+    .certificate:nth-child(1) p {
+      color: #0d11f5; /* Bright yellow for the first certificate */
+    }
+    .certificate:nth-child(2) p {
+      color: #f40d0d; /* Sky blue for the second certificate */
+    }
+    .certificate:nth-child(3) p {
+      color: #d105a1; /* Light green for the third certificate */
+    }
+  </style>
+</head>
+<body>
+  <h1>Certificates</h1>
+  <div class="certificate-container">
+    <div class="certificate">
+      <img src="images/certificate1.png" alt="Certificate 1">
+      <p><strong>Certificate of Excellence</strong></p>
+      <p>Completed Microsoft Generative AI course.  
+      Gained skills in AI ethics.  
+      Excited to explore AI innovations.</p>
+    </div>
+    
+    <div class="certificate">
+      <img src="images/certificate2.png" alt="Certificate 2">
+      <p><strong>Certificate of Achievement</strong></p>
+      <p>Attended E-Summit 2024 workshop.  
+      Learned about entrepreneurship fundamentals.  
+      Inspired to start new ventures.</p>
+    </div>
+    
+    <div class="certificate">
+      <img src="images/bot.jpg" alt="Certificate 3">
+      <p><strong>Certificate of Participation</strong></p>
+      <p>Participated in BotCraft Hackathon.  
+      Built bots for virtual collaboration.  
+      Amazing teamwork with great friends.</p>
+    </div>
+  </div>
+</body>
+</html>

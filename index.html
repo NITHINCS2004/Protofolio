@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: #e9a021;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .ghost-btn {
+            background-color: #e9a021;
+            color: white;
+            border: 2px solid #f1f9f1;
+            margin-left: 20px;
+            border-color: red;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .hero {
+            background: #f4f4f4;
+            padding: 50px 0;
+        }
+
+        .about-me-section {
+            display: none; /* Hide About Me section by default */
+            background: transparent;
+            padding: 50px 0;
+            position: relative;
+            width: 50%; /* Half of original width */
+            height: 150px; /* Half of original height */
+            margin: 0 auto;
+            box-sizing: border-box;
+            margin-top: 65px;
+        }
+
+        .about-me-section-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            
+        }
+
+        /* Keyframes for moving the text in all directions */
+        @keyframes moveText {
+            0% {
+                top: 0;
+                left: 0;
+                transform: none;
+            }
+            25% {
+                top: 450px;
+                left: 0px;
+                transform: none;
+            }
+            50% {
+                top: 450px;
+                left: 450px;
+                transform: none;
+            }
+            75% {
+                top: 0px;
+                left: 500px;
+                transform: none;
+            }
+            100% {
+                top: 0;
+                left: 0;
+                transform: none;
+            }
+        }
+
+        .moving-text {
+            position: absolute;
+            font-size: 18px;
+            color: #ff200c;
+            animation: moveText 8s linear infinite;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .about-me-photo img {
+            max-width: 300px;
+            margin-top: 30px;
+            border-radius: 50%;
+        }
+        .custom-strong:nth-of-type(1) { color: blue; }
+    .custom-strong:nth-of-type(2) { color: green; }
+    .custom-strong:nth-of-type(3) { color: purple; }
+    .custom-strong:nth-of-type(4) { color: orange; }
+    .custom-strong:nth-of-type(5) { color: red; }
+    .custom-strong:nth-of-type(6) { color: teal; }
+    p { line-height: 1.8; }
+    .sci {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sci a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.sci a:hover {
+    color: #34eb77; /* Green color on hover */
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar header section -->
+    <header class="header"></header>
+    <nav class="navbar">
+        <div class="logo">
+            <h2 class="logo-heading">PortFolio</h2>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars hamburger-icon"></i>
+            <i class="fas fa-times cross-icon"></i>
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-list-items"><a class="links" href="portfolio.html">Projects</a></li>
+                <li class="menu-list-items"><a class="links" href="about.html">Internship</a></li>
+                <li class="menu-list-items">
+                    <a class="links" href="certificate.html">Certificates</a>
+                  </li>
+                <li class="menu-list-items"><a class="links" href="Links.html">Progress</a></li>
+                <li class="menu-list-items"><a class="links" href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <center>
+            <div class="intro">
+                <div class="headings">
+                    <h3 class="greet-heading">Hello, I'm</h3>
+                    <h1 class="my-heading">NITHIN CS</h1>
+                    <h4 class="sub-heading">
+                        A Passionate Software Engineer Eager to Learn and Grow with Fresh Ideas.
+                    </h4>
+                </div>
+                <div class="intro-buttons">
+                    <button class="btn common-btn" onclick="showAboutMe()">About Me</button>
+                    <button class="btn ghost-btn">
+                        <a href="https://drive.google.com/file/d/19zzlk_d6PNhbxT4PIXO7EkeH6RodXmjL/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit;">Get Resume</a>
+                    </button>
+                </div>
+                <div class="sci">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </center>
+    </section>
+
+    <!-- About Me Section -->
+    <div id="about-me" class="about-me-section" style="display: none;">
+        <div class="about-me-section-content">
+            <h2>About Me</h2>
+            <!---
+            <p>
+                I am a <strong>passionate software engineer</strong> delivering <strong>innovative and scalable solutions</strong>.  
+                My <strong>technical skills</strong> include <strong>Python, JavaScript, HTML, CSS</strong>, and emerging frameworks.  
+                Proficient in <strong>AI/ML, Git, Power BI</strong>, driving impactful <strong>growth</strong>.
+            </p>-->
+            <p>
+                I am a <strong class="custom-strong">passionate software engineer</strong> delivering <strong class="custom-strong">innovative and scalable solutions</strong>.  
+                <br><br>
+                My <strong class="custom-strong">technical skills</strong> include <strong class="custom-strong">Python, JavaScript, HTML, CSS</strong>, and emerging frameworks.  
+                <br><br>
+                Proficient in <strong class="custom-strong">AI/ML, Git, Power BI</strong>, driving impactful <strong class="custom-strong">growth</strong>.
+            </p>
+            <div class="moving-text">
+                <h3><span>Full Stack Developer</span></h3><br>
+                <h3><span>Web Developer</span></h3>
+            </div>
+            <a href="javascript:void(0)" class="back-btn" onclick="goBack()">Back</a>
+        </div>
+        <div class="about-me-photo">
+            <img src="images/photo.jpg" alt="Your Photo">
+        </div>
+    </div>
+
+    <script>
+        // Function to display the About Me section
+        function showAboutMe() {
+            // Get the About Me section, Hero section, and Body
+            const aboutMeSection = document.getElementById('about-me');
+            const heroSection = document.querySelector('.hero');
+            
+            // Hide the Hero section
+            heroSection.style.display = 'none';
+            
+            // Show the About Me section
+            aboutMeSection.style.display = 'flex';
+        }
+
+        // Function to go back to the previous content (Hero section)
+        function goBack() {
+            // Get the About Me section and Hero section
+            const aboutMeSection = document.getElementById('about-me');
+            const heroSection = document.querySelector('.hero');
+            
+            // Hide the About Me section
+            aboutMeSection.style.display = 'none';
+            
+            // Show the Hero section again
+            heroSection.style.display = 'flex';
+        }
+    </script>
+
+    
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links - My Progress</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="links.html">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>My Learning Progress</h1>
+
+        <div class="links-section">
+            <h2>Problems Solved</h2>
+            <div class="links">
+                <div class="platform">
+                    
+                    <i class="fab fa-leetcode fa-3x"></i>
+                    <p><strong>LeetCode:</strong> 
+                        <a href="https://leetcode.com/u/NITHIN_CS/" target="_blank" style="color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; background-color: #ff7e5f; border-radius: 5px; display: inline-block; margin-top: 10px; cursor: pointer; transition: background-color 0.3s;">
+                            Visit my LeetCode Profile
+                        </a>
+                    </p>
+                   
+                </div>
+                
+                <div class="platform">
+                    
+                    <i class="fab fa-geeksforgeeks fa-3x"></i>
+                    <p><strong>GeeksforGeeks:</strong> 
+                        <a href="https://www.geeksforgeeks.org/user/nithickr4u/" target="_blank" style="color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; background-color: #e0694b; border-radius: 5px; display: inline-block; margin-top: 10px; cursor: pointer; transition: background-color 0.3s;">
+                            Visit my GeeksforGeeks Profile
+                        </a>
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="technologies-section">
+            <h2>Technologies Learned</h2>
+            <div class="technologies">
+                <p><strong>HTML:</strong> 80% of content learned</p>
+                <p><strong>CSS:</strong> 75% of content learned</p>
+                <p><strong>JavaScript:</strong> 60% of content learned</p>
+                <p><strong>Express.js:</strong> 50% of content learned</p>
+                <p><strong>Angular (Basics):</strong> 40% of content learned</p>
+                <p><strong>React (Basics):</strong> 30% of content learned</p>
+            </div>
+        </div>
+
+        <div class="graph-section">
+            <h2>Learning Progress Graph</h2>
+            <canvas id="progressGraph" width="400" height="200"></canvas>
+        </div>
+
+        <div class="github-section">
+            <h2>My GitHub</h2>
+            <div class="github-link">
+                
+                <p>Explore my repositories and projects on GitHub.</p>
+                <a href="https://github.com/NITHINCS2004" target="_blank" class="github-btn">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="progressGraph.js"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links - My Progress</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="links.html">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>My Learning Progress</h1>
+
+        <!-- GitHub Section moved to the top -->
+        <div class="github-section">
+            <h2>My GitHub</h2>
+            <div class="github-link">
+                <i class="fab fa-github fa-3x"></i> <!-- GitHub Icon -->
+                <p>Explore my repositories and projects on GitHub.</p>
+                <a href="https://github.com/NITHINCS2004" target="_blank" class="github-btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="technologies-section">
+            <h2>Technologies Learned</h2>
+            <div class="technologies">
+                <p><strong>HTML:</strong> 80% of content learned</p>
+                <p><strong>CSS:</strong> 75% of content learned</p>
+                <p><strong>JavaScript:</strong> 60% of content learned</p>
+                <p><strong>Express.js:</strong> 50% of content learned</p>
+                <p><strong>Angular (Basics):</strong> 40% of content learned</p>
+                <p><strong>React (Basics):</strong> 30% of content learned</p>
+            </div>
+        </div>
+
+        <div class="graph-section">
+            <h2>Learning Progress Graph</h2>
+            <canvas id="progressGraph" width="400" height="200"></canvas>
+        </div>
+
+        <!-- LeetCode and GeeksforGeeks sections moved to the end -->
+        <div class="links-section">
+            <h2>Problems Solved</h2>
+            <div class="links">
+                <div class="platform">
+                    <!-- LeetCode Platform with Icon -->
+                    <i class="fab fa-leetcode fa-3x"></i>
+                    <p><strong>LeetCode:</strong> 
+                        <a href="https://leetcode.com/u/NITHIN_CS/" target="_blank" style="color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; background-color: #ff7e5f; border-radius: 5px; display: inline-block; margin-top: 10px; cursor: pointer; transition: background-color 0.3s;">
+                            Visit my LeetCode Profile
+                        </a>
+                    </p>
+                </div>
+                
+                <div class="platform">
+                    <!-- GeeksforGeeks Platform with Icon -->
+                    <i class="fab fa-geeksforgeeks fa-3x"></i>
+                    <p><strong>GeeksforGeeks:</strong> 
+                        <a href="https://www.geeksforgeeks.org/user/nithickr4u/" target="_blank" style="color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; background-color: #e0694b; border-radius: 5px; display: inline-block; margin-top: 10px; cursor: pointer; transition: background-color 0.3s;">
+                            Visit my GeeksforGeeks Profile
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="progressGraph.js"></script>
+</body>
+</html>

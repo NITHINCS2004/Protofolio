@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ff7eb3, #b5d3e2, #8cb1eb);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
+            animation: fadeIn 1.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            background: linear-gradient(to right, #ff7eb3, #ff758c);
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+        .card a:hover {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Internship Certificate</h2>
+            <p>Click the button below to view and download the internship certificate.</p>
+            <a href="https://drive.google.com/file/d/14sCU7CaOW7auriGfrQrkn6fASEEsRCSd/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+        <div class="card">
+            <h2>Assignment: Landing Page</h2>
+            <p>Explore the landing page assignment created during the internship.</p>
+            <a href="https://nithincs2004.github.io/OCTANET_OCTOBER/" target="_blank">View Assignment</a>
+        </div>
+        <div class="card">
+            <h2>GitHub Repository</h2>
+            <p>Check out the GitHub repository for the projects and assignments created during the internship.</p>
+            <a href="https://github.com/NITHINCS2004/OCTANET_OCTOBER" target="_blank">
+                <i class="fa fa-github" style="font-size: 24px; vertical-align: middle; margin-right: 8px;"></i>
+                Visit GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>

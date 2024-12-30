@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+}
+
+.links-section, .technologies-section, .graph-section, .github-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Linear Gradient Backgrounds for Sections */
+.links-section {
+    background: linear-gradient(to right, #5af307, #feb47b); /* Pink to Orange */
+}
+
+.technologies-section {
+    background: linear-gradient(to right, #eadb0b, #0adfb4); /* Purple to Blue */
+}
+
+.graph-section {
+    background: linear-gradient(to right, #849ca4, #f5f5eb); /* Light Blue to Blue */
+}
+
+.github-section {
+    background: linear-gradient(to right, #e85fb1, #0ee9c4); /* Light Blue to Dark Blue */
+    color: white;
+}
+
+/* Link Styling inside Boxes */
+.links a, .github-btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover, .github-btn:hover {
+    text-decoration: underline;
+}
+
+/* Platform Icon Styling */
+.platform {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+}
+
+.platform-icon {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.platform a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.platform a:hover {
+    text-decoration: underline;
+}
+
+/* Add responsive adjustments for small screens */
+@media screen and (max-width: 600px) {
+    .platform {
+        font-size: 16px;
+    }
+    .platform-icon {
+        font-size: 25px;
+    }
+}
+
+/* Styling Technologies Section */
+.technologies p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.github-link {
+    text-align: center;
+}
+
+.github-btn {
+    color: #fff;
+    background-color: #2d87f0; /* GitHub blue */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.github-btn:hover {
+    background-color: #1c6eb8;
+}
+
+/* Styling the Canvas for Graph */
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
